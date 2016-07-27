@@ -15,9 +15,9 @@
     跑分测试： http://aui.github.io/artTemplate/test/test-speed.html
     
 四、实例演示<br>
-    自写demo演示：（以doT.js为例）
+    以doT.js为例，见仓库dot文件夹
     
-五、具体语法参考地址  
+五、具体语法参考地址<br>
     [doT.js] : https://github.com/olado/doT<br>
     [artTemplate]: https://github.com/aui/artTemplate<br>
     [tmpl]: http://github.com/jquery/jquery-tmpl<br>
