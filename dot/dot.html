@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>前台数据渲染模板demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/doT.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+</head>
+<body>
+	<div id="content"></div>
+
+	<!-- 赋值模板 -->
+	<script id="InterPolantionTmpl" type="text/x-dot-template">
+		<span>I am {{=it.name}} , </span>
+		<span>{{=it.age || ''}} years old ,</span>
+		<span>from {{=it.area || ''}}.</span>
+	</script>
+	<!-- 循环模板 -->
+	<script id="EvaluationTmpl" type="text/x-dot-template">
+		{{ for(var prop in it) { }}
+			<span>I am {{=it[prop].name}} , </span>
+			<span>{{=it[prop].age || ''}} years old ,</span>
+			<span>from {{=it[prop].area || ''}}.</span>
+		{{ } }}
+	</script>
+	<!-- 数组模板 -->
+	<script id="ArraysTmpl" type="text/x-dot-template">
+		{{~it:value:index}}
+			<span>{{= index}}:{{= value }}  </span>
+		{{~}}
+	</script>
+	<!-- 条件模板 -->
+	<script id="ConditionTmpl" type="text/x-dot-template">
+		{{?it.sex === 0}}
+			<span> He is {{=it.name}}!</span>
+		{{??}}
+			<span> She is {{=it.name}}!</span>
+		{{?}}
+	</script>
+
+	<script type="text/javascript">
+		var dataObj = {
+				singleData: {
+					"name": "ChaoWei",
+					"age": 18,
+					"area": "JiangSu",
+					"sex": 0,//男
+				},
+				multipleData: [{
+					"name":"XiaoNa",
+					"age":36,
+					"sex":1,//女
+					"area":"Guangxi"
+				},{
+					"name":"ChaoWei",
+					"age":18,
+					"sex":0,//男
+					"area":"JiangSu"
+				}],
+				Arr:["ChaoWei","XiaoNa","Kge"]
+			},
+			funObj = { 
+				originInterFun: function(data){
+					var html =  '<span>I am '+ data.name +' ,</span>' +
+								'<span>'+ data.age +' years old ,</span>' +
+								'<span>from '+ data.area +'.</span>';
+					$("#content").append("一般赋值写法：" + html + "<br>");
+				},
+				dotInterFun: function(data){
+					var temp = doT.template($("#InterPolantionTmpl").text());
+					$("#content").append("模板赋值写法：" + temp(data) + "<br>");
+				},
+				originEvaFun: function(data){
+					var html = "";
+					for(var i = 0, len = data.length; i < len; i++){
+						html += '<span>I am '+ data[i].name +' ,</span>' +
+									'<span>'+ data[i].age +' years old ,</span>' +
+									'<span>from '+ data[i].area +'.</span>  ';
+					}
+					$("#content").append("一般循环写法：" + html + "<br>");
+				},
+				dotEvaFun: function(data){
+					var temp = doT.template($("#EvaluationTmpl").text());
+					$("#content").append("模板循环写法：" + temp(data) + "<br>");
+				},
+				originArrFun: function(data){
+					var html = "";
+					for(var key in data){
+						html += '<span>'+ key + ":"+ data[key] +'  </span>';
+					}
+					$("#content").append("一般数组写法：" + html + "<br>");
+				},
+				dotArrFun: function(data){
+					var temp = doT.template($("#ArraysTmpl").text());
+					$("#content").append("模板数组写法：" + temp(data) + "<br>");
+				},
+				originConditionFun: function(data){
+					var html = "";
+					if ( data.sex === 0 ){
+						html = 'He is '+ data.name +';';
+					} else {
+						html = 'She is '+ data.name +';';
+					}
+					$("#content").append("一般条件写法：" + html + "<br>");
+				},
+				dotConditionFun: function(data){
+					var temp = doT.template($("#ConditionTmpl").text());
+					$("#content").append("模板条件写法：" + temp(data) + "<br>");
+				}
+			};
+
+		funObj.originInterFun(dataObj.singleData); //一般赋值 测试
+		funObj.dotInterFun(dataObj.singleData); //模板赋值 测试
+
+		funObj.originEvaFun(dataObj.multipleData); //一般循环 测试
+		funObj.dotEvaFun(dataObj.multipleData); //模板循环 测试
+
+		funObj.originArrFun(dataObj.Arr);//一般数组 测试
+		funObj.dotArrFun(dataObj.Arr);//模板数组 测试
+
+		funObj.originConditionFun(dataObj.singleData);//一般条件 测试
+		funObj.dotConditionFun(dataObj.singleData);//模板条件 测试
+	</script>	
+</body>
+</html>
