@@ -8,10 +8,10 @@
     
 二、优势
 
-    缓存模板结构，在数据层操作完直接套用模板输出到客户端界面中
-    减少dom操作的异常
-    减少拼接html的痛苦
-    减少各浏览器下dom操作的延迟差异
+    1、缓存模板结构，在数据层操作完直接套用模板输出到客户端界面中
+    2、减少dom操作的异常
+    3、减少拼接html的痛苦
+    4、减少各浏览器下dom操作的延迟差异
     
 三、常用模板
 
@@ -23,6 +23,6 @@
     
 五、具体语法参考地址  
 
-    doT.js : https://github.com/olado/doT(http://dotjs.cn/)
-    artTemplate: https://github.com/aui/artTemplate
-    tmpl:http://github.com/jquery/jquery-tmpl
+    doT.js :  https://github.com/olado/doT(http://dotjs.cn/)
+    artTemplate:  https://github.com/aui/artTemplate
+    tmpl: http://github.com/jquery/jquery-tmpl
