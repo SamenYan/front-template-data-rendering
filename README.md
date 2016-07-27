@@ -12,12 +12,12 @@
     4.减少各浏览器下dom操作的延迟差异<br>
     
 三、常用模板<br>
-    跑分测试： http://aui.github.io/artTemplate/test/test-speed.html
+    跑分测试： http://aui.github.io/artTemplate/test/test-speed.html（就是迷恋跑分）
     
 四、实例演示<br>
     以doT.js为例，见仓库dot文件夹
     
 五、具体语法参考地址<br>
-    [doT.js] : https://github.com/olado/doT<br>
+    [doT.js] : https://github.com/olado/doT [doT爱好者]http://dotjs.cn/<br> 
     [artTemplate]: https://github.com/aui/artTemplate<br>
     [tmpl]: http://github.com/jquery/jquery-tmpl<br>
