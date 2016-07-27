@@ -22,7 +22,6 @@
     自写demo演示：（以doT.js为例）
     
 五、具体语法参考地址  
-
-    doT.js :  https://github.com/olado/doT(http://dotjs.cn/)
+    [doT.js] :  (https://github.com/olado/doT)
     artTemplate:  https://github.com/aui/artTemplate
     tmpl: http://github.com/jquery/jquery-tmpl
