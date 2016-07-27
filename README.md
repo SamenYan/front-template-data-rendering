@@ -1,5 +1,5 @@
 # front-template-data-rendering
-===
+
 一、简介<br>
     模板框架，在web前端使用，用于数据渲染；<br>
     主要用途: 在写好的模板上，放进数据，生成含有数据的html代码<br>
