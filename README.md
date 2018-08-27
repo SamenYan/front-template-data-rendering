@@ -23,10 +23,9 @@
     
 ### 具体语法参考地址
 
-- doT
-    
-[github仓库](https://github.com/olado/doT)   
-[doT爱好者](http://dotjs.cn/)
+- [doT](https://github.com/olado/doT)  
+
+- [doT爱好者](http://dotjs.cn/)
 
 - [artTemplate](https://github.com/aui/artTemplate)
 
