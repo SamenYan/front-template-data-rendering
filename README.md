@@ -24,13 +24,10 @@
 ### 具体语法参考地址
 
 - doT
-    [doT](https://github.com/olado/doT)   
-    [doT爱好者](http://dotjs.cn/)
-
-- artTemplate
-
-    https://github.com/aui/artTemplate
-
-- tmpl
     
-    http://github.com/jquery/jquery-tmpl
+[github仓库](https://github.com/olado/doT)   
+[doT爱好者](http://dotjs.cn/)
+
+- [artTemplate](https://github.com/aui/artTemplate)
+
+- [tmpl](http://github.com/jquery/jquery-tmpl)
