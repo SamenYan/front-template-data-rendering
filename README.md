@@ -14,7 +14,7 @@
 
 ##### 跑分性能
 
-![image] (https://image-1257132344.cos.ap-shanghai.myqcloud.com/template-speed.jpg )
+![image](https://image-1257132344.cos.ap-shanghai.myqcloud.com/template-speed.jpg )
 
 ##### demo实例
 
