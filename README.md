@@ -1,21 +1,34 @@
 ## 前端模板引擎
 
-#### 简介
+什么是模板引擎，说的简单点，就是一个字符串待定几个动态变量。通过数据匹配待定变量datamodel输出相应的html代码，提高页面渲染速度、易用性。
 
-在web前端用于数据渲染，根据不同数据源重复生成结构相同的html，节省代码量，提高可维护性
-
-##### 几种类型
-
-- [doT](https://github.com/olado/doT)  | [doT爱好者](http://dotjs.cn/)
+##### 类库框架
 
 - [artTemplate](https://github.com/aui/artTemplate)
 
+- [doT](https://github.com/olado/doT)  | [doT爱好者](http://dotjs.cn/)
+
+- [tppl](https://github.com/jojoin/tppl)
+
+- [Handlebars](https://github.com/wycats/handlebars.js)
+
 - [jquery-tmpl](http://github.com/jquery/jquery-tmpl)
 
-##### 跑分性能
+- [ejs](https://github.com/mde/ejs)
 
-![image](https://image-1257132344.cos.ap-shanghai.myqcloud.com/template-speed.jpg )
+#### 跑分性能
+
+通过对各模板引擎测试结果，可以看出artTemplate ,tppl和doT等引擎模板整体性能要有绝对优势。
+[在线速度测试](http://jojoin.github.io/tppl/test/test.htm)
+
+![image](https://image-1257132344.cos.ap-shanghai.myqcloud.com/tpl-speed.jpg)
+
+#### 推荐使用
+
+`artTemplate`: 大厂出品(腾讯)，社区活跃，Stars多
+
+`doT`: 语法简洁，易上手
 
 ##### demo实例
 
-以doT.js为例，见仓库dot文件夹
+基于doT.js语法小试牛刀，详见仓库dot文件夹
