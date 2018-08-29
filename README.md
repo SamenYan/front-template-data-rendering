@@ -2,7 +2,7 @@
 
 什么是模板引擎，说的简单点，就是一个字符串待定几个动态变量。通过数据匹配待定变量datamodel输出相应的html代码，提高页面渲染速度、易用性。
 
-##### 类库框架
+#### 类库框架
 
 - [artTemplate](https://github.com/aui/artTemplate)
 
@@ -25,10 +25,10 @@
 
 #### 推荐使用
 
-`artTemplate`: 大厂出品(腾讯)，社区活跃，Stars多
+`artTemplate`: 大厂出品(腾讯)，stars多
 
 `doT`: 语法简洁，易上手
 
-##### demo实例
+#### demo实例
 
 基于doT.js语法小试牛刀，详见仓库dot文件夹
