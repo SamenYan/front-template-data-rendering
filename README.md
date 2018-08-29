@@ -6,7 +6,9 @@
 
 - [artTemplate](https://github.com/aui/artTemplate)
 
-- [doT](https://github.com/olado/doT)  [`doT爱好者`](http://dotjs.cn/)
+- [doT](https://github.com/olado/doT)  
+
+  [`doT爱好者`](http://dotjs.cn/)
 
 - [tppl](https://github.com/jojoin/tppl)
 
