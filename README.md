@@ -35,3 +35,7 @@
 #### 4⃣demo实例
 
 基于doT.js语法小试牛刀，详见仓库dot文件夹
+
+## License
+
+The MIT license.
